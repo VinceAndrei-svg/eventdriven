@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bubble Sheet Classification</title>
+</head>
+<body>
+    <h1>Upload Bubble Sheet</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    {% if answer %}
+        <h2>Predicted Answer: {{ answer }}</h2>
+    {% endif %}
+</body>
+</html>
