@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("/static/images/mmc.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Ensures the title is above the card */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger title font size */
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgba(85, 85, 85, 0.5); /* Reduced opacity for more background visibility */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 80%; /* Adjust width for better layout */
+    max-width: 400px; /* Max width of the card */
+}
+
+.card:hover {
+    background-color: rgba(85, 85, 85, 1); /* Full color on hover */
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduced padding to make button smaller */
+    font-size: 14px; /* Smaller font size */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkorange;
+}

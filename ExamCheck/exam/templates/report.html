@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Report</title>
+</head>
+<body>
+    <h1>Performance Report</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Question</th>
+                <th>Predicted</th>
+                <th>Correct</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for comparison in comparisons %}
+            <tr>
+                <td>{{ comparison.question_number }}</td>
+                <td>{{ comparison.predicted_answer }}</td>
+                <td>{{ comparison.correct_answer }}</td>
+                <td>{{ comparison.confidence }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
